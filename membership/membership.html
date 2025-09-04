@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitverse | Membership plan</title>
+    <link rel="stylesheet" href="membership.css">
+</head>
+<body>
+    <div id="bar">
+        <div id ="logo">
+            <a href="../home_page/first_page.html">Fitverse</a>
+        </div>
+        <ul id="menu">
+            <li><a href="../membership/membership.html">Membership</a></li>
+            <li><a href="../login_page/login.html">Log in</a></li>
+    </div>
+    <section class="back">
+        <video autoplay loop muted playsinline class="video_b">
+            <source src="workout.mp4" type="video/mp4">
+        </video>
+        <div class="box">
+            <h2>Fitverse</h2>
+            <ul>
+                <li>✔ Personal and group classes</li>
+                <li>✔ Smart workout recommendation</li>
+                <li>✔ Full gym access</li>
+                <li>✔ Song sharing</li>
+                <li>✔ Best trainer on every field</li>
+                <li>✔ Best equipments</li>
+            </ul>
+            <h2>Choose Your Membership</h2>
+            <form action="../membership/membership.php" method="POST">
+                <button id="btn" type="submit" name="name" value="Monthly">
+                    Monthly - 2000TK (1 Month)
+                </button>
+                <input type="hidden" name="price" value="2000">
+                <input type="hidden" name="duration" value="1 month">
+            </form>
+            <form action="../membership/membership.php" method="POST">
+                <button id="btn" type="submit" name="name" value=" Six Month">
+                    6 Monthly - 10000TK (6 Month)
+                </button>
+                <input type="hidden" name="price" value="10000">
+                <input type="hidden" name="duration" value="6 month">
+            </form>
+            <form action="../membership/membership.php" method="POST">
+                <button id="btn" type="submit" name="name" value="Yearly">
+                    Yearly - 17000TK (1 year)
+                </button>
+                <input type="hidden" name="price" value="17000">
+                <input type="hidden" name="duration" value="1 year">
+            </form>
+        </div>
+    </section>
+</body>
