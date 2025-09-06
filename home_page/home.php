@@ -24,9 +24,9 @@ $role = $_SESSION['role'];
                 <li><a href="../index2.html">Maintenance</a></li>
                 <li><a href="../index1.html">Trainer</a></li>
             <?php } ?>
-            <li><a href="#">Class Booking</a></li>
+            <li><a href="../class.html">Class Booking</a></li>
             <li><a href="../smart_recommendation/reco_input.html">Smart recommendation</a></li>
-            <li><a href="#">Playlist</a></li>
+            <li><a href="../index.php">Playlist</a></li>
             <li><a href="../login_page/logout.php">Logout</a></li>
         </ul>
     </div>

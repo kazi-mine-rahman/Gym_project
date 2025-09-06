@@ -2,14 +2,14 @@
 $servername = "localhost"; 
 $username   = "root";      
 $password   = "";          
-$dbname     = "FITVARSE";
+$dbname     = "fitverse";
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$date         = $_POST['date'];
-$class_type   = $_POST['class_type'];
-$time         = $_POST['time'];
+$date= $_POST['date'];
+$class_type= $_POST['class_type'];
+$time = $_POST['time'];
 $workout_type = $_POST['workout_type'];
 $result = $conn->query("SELECT class_id FROM class ORDER BY class_id DESC LIMIT 1");
 if ($result->num_rows > 0) {
