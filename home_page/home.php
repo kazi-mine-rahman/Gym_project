@@ -21,7 +21,8 @@ $role = $_SESSION['role'];
         </div>
         <ul id="menu">
             <?php if ($role!="member") { ?>
-                <li><a href="#">Maintenance</a></li>
+                <li><a href="../index2.html">Maintenance</a></li>
+                <li><a href="../index1.html">Trainer</a></li>
             <?php } ?>
             <li><a href="#">Class Booking</a></li>
             <li><a href="../smart_recommendation/reco_input.html">Smart recommendation</a></li>
