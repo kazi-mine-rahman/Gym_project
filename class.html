@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitverse | Class Booking</title>
+    <link rel="stylesheet" href="class.css">
+</head>
+<body>
+    <div class= 'class'>
+        <h1>Fitverse</h1>
+        <h3>Train Hard, Book Smart</h3>
+        <form action="class.php" method="POST">
+            <div class="input">
+                <label>Date</label>
+                <input type="date" name="date" required>
+            </div>
+            <div class="input">
+                <label>Class Type</label>
+                <select name="class_type" required>
+                    <option value="">Select</option>
+                    <option value="Group Class">Group Class</option>
+                    <option value="Personal Class">Personal Class</option>
+                </select>
+            </div>
+            <div class="input">
+                <label>Slot</label>
+                <select name="time" required>
+                    <option value="10:00 AM - 11.30 AM">10:00 AM - 11.30 AM</option>
+                    <option value="12:00 PM - 1:30 PM">12:00 PM - 1:30 PM</option>
+                    <option value="2:00 PM - 3:30 PM">2:00 PM - 3:30 PM</option>
+                    <option value="4:00 PM - 5:30 PM">4:00 PM - 5:30 PM</option>
+                    <option value="6:30 PM - 8:00 PM">6:30 PM - 8:00 PM</option>
+                </select>
+            </div>
+            <div class="input">
+                <label>Workout type</label>
+                <select name="workout_type" required>
+                    <option value="Strength Training">Strength Training</option>
+                    <option value="Cardio">Cardio</option>
+                    <option value="Flexibility">Flexibility</option>
+                    <option value="Mixed">Mixed</option>
+                </select>
+            </div>
+            <button type="submit" id="book">Book Now</button>
+        </form>
+    </div>
+</body>
+</html>

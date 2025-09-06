@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  /* Use the uploaded image as background */
+  background: url("music.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* Optional: dark overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); /* adjust darkness as needed */
+  z-index: -1;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.7);
+  border-bottom: 2px solid #00c6ff;
+}
+
+header h1 {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* Main container */
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: rgba(0,0,0,0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+.form-section button {
+  background: #00c6ff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.form-section button:hover {
+  background: #0099cc;
+}
+
+/* Song Card */
+.song-card {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+}
+
+.song-card h3 {
+  margin-top: 0;
+}
+
+.song-card iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  border: none;
+  margin-top: 10px;
+}
+
+/* Actions */
+.actions {
+  margin-top: 10px;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  color: #00c6ff;
+  font-size: 16px;
+  cursor: pointer;
+}

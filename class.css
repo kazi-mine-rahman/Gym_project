@@ -1,0 +1,63 @@
+body{
+    margin:0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(group_class.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.class{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    border-radius: 20px;
+    width: 500px;
+    color: white;
+    box-shadow: 0 4px 15px rgba(250, 249, 249, 0.6);
+}
+.class h1{
+    text-align: center;
+    /* font-size:large; */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.class h3{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+.input{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.input label{
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.input input,
+.input select,
+.input textarea{
+    padding: 10px;
+    border-radius: 6px;
+}
+/* #00b894 */
+#book{
+    width: 100%;
+    padding: 12px;
+    background: rgba(26, 252, 26, 0.858);
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+}
+#book:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(188, 177, 177, 0.516);
+    transition: all 0.7s ease-in-out;
+}
