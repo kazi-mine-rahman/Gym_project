@@ -9,4 +9,3 @@ if (isset($_POST['title'])) {
 header("Location: index.php");
 exit();
 ?>
-

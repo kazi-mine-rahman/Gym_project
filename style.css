@@ -32,6 +32,8 @@ header h1 {
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 1;
 }
 .form-section {
   margin-bottom: 30px;
