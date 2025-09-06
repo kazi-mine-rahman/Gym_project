@@ -62,9 +62,9 @@ $food=$r2->fetch_assoc();
             <a href="../home_page/home.php">Fitverse</a>
         </div>
         <ul id="menu">
-            <li><a href="#">Class Booking</a></li>
+            <li><a href="../class.html">Class Booking</a></li>
             <li><a href="recommendation.html">Smart recommendation</a></li>
-            <li><a href="#">Playlist</a></li>
+            <li><a href="../index.php">Playlist</a></li>
             <li><a href="../login_page/logout.php">Logout</a></li>
         </ul>
     </div>
