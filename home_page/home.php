@@ -19,6 +19,7 @@ $role = $_SESSION['role'];
         <div id ="logo">
             <h2>Fitverse</h2>
         </div>
+        
         <ul id="menu">
             <?php if ($role!="member") { ?>
                 <li><a href="../index2.php">Maintenance</a></li>
