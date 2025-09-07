@@ -71,7 +71,7 @@ if ($conn->query($sql) === TRUE) {
             <h2>✅ Booking Successful!</h2>
             <p><b>Class ID:</b> $new_id</p>
             <p><b>Class Type:</b> $class_type</p>
-            <p><b>Workout Time:</b> $workout_type</p>
+            <p><b>Workout Time:</b> $time</p>
             <p><b>Session Focus:</b> $workout_type</p>
             <a href='class.html'>Book Another Class</a>
         </div>
