@@ -47,6 +47,12 @@ $y = "SELECT suggestion FROM food_suggestion WHERE bmi= $a AND fitness_goal = '$
 $r2=$conn->query($y);
 $food=$r2->fetch_assoc();
 
+$id=$_SESSION['id'];
+if (str_starts_with($id, "mb")) {
+    $z = "UPDATE member SET height_m='$height', weight_kg='$weight', fitness_goal='$fitness_goal', injury_history='$injury', nutration_preference='$nutration_type' WHERE member_id='$id'";
+    $r3=mysqli_query($conn, $z);
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,8 +68,9 @@ $food=$r2->fetch_assoc();
             <a href="../home_page/home.php">Fitverse</a>
         </div>
         <ul id="menu">
+            <li><a href="../index1.php">Trainer</a></li>
             <li><a href="../class.html">Class Booking</a></li>
-            <li><a href="recommendation.html">Smart recommendation</a></li>
+            <li><a href="../smart_recommendation/reco_input.html">Smart recommendation</a></li>
             <li><a href="../index.php">Playlist</a></li>
             <li><a href="../login_page/logout.php">Logout</a></li>
         </ul>

@@ -29,6 +29,7 @@ body{
     text-decoration: none;
     font-weight: bold;
 }
+
 #bar #logo{
     font-size: 30px;
     margin-top: 6px;
@@ -45,8 +46,10 @@ body{
     backdrop-filter: blur(3px); 
     /* background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px); */
-    padding: 40px;
-    margin-top:50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    margin-top:40px;
     border-radius: 20px;
     width: 500px;
     height: fit-content;
@@ -80,21 +83,6 @@ body{
     padding: 10px;
     border-radius: 6px;
 }
-/* #00b894 */
-/* #generate{
-    width: 100%;
-    padding: 12px;
-    background: rgba(33, 150, 243,.5);
-    backdrop-filter: blur(3px);
-    border-radius: 6px;
-    color: white;
-    font-weight: bold;
-}
-#generate:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(188, 177, 177, 0.516);
-    transition: all 0.7s ease-in-out;
-} */
 #generate {
     background: rgb(33, 150, 243);
     color: white;
@@ -106,6 +94,7 @@ body{
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(33, 150, 243, 0.4);
     transition: all 0.3s ease;
+    /* margin-bottom: 15px; */
 }
 #generate:hover {
   background: rgb(3, 169, 244);
